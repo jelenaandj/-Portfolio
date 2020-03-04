@@ -1,8 +1,8 @@
 import React from 'react'
 import AboutMe from './AboutMe'
 import Skillls from './Skillls'
-const AboutMeLink=AboutMe.AboutMeLink
-const SkillsLink=Skillls.SkillsLink
+import {Link} from 'react-router-dom'
+
 
 
 export default function NavBar() {
@@ -10,22 +10,10 @@ export default function NavBar() {
 
     return (
         <div>
-            <nav>
-            <AboutMeLink
-            to="aboutMe" 
-            spy={true} 
-            smooth={true} 
-            duration={500} 
-            className='aboutMe' 
-            >
-
-            </AboutMeLink>
-
-            <SkillsLink>
-
-            </SkillsLink>
-            </nav>
-            
+            <Link to='/'><button>Home</button></Link>
+            <Link to='skills'><button>Skillls</button></Link>
+            <Link to='myprojects'> <button>My Projects</button></Link>
+            <Link to='contact'><button>Contact</button></Link> 
         </div>
     )
 }
