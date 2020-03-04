@@ -1,5 +1,11 @@
 import React from 'react';
 import './App.css';
+import NavBar from './components/NavBar';
+import Header from './layout/Header';
+import Main from './layout/Main';
+import Footer from './layout/Footer';
+
+
 
 function App() {
   return (
@@ -7,6 +13,7 @@ function App() {
       <Header/>
       <Main/>
       <Footer/>
+      
     </div>
   );
 }

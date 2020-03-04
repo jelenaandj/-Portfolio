@@ -1,15 +1,31 @@
 import React from 'react'
+import AboutMe from './AboutMe'
+import Skillls from './Skillls'
+const AboutMeLink=AboutMe.AboutMeLink
+const SkillsLink=Skillls.SkillsLink
+
 
 export default function NavBar() {
+
+
     return (
         <div>
-            <ul>
-            <li>
-                <a href="#education">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav>
+            <AboutMeLink
+            to="aboutMe" 
+            spy={true} 
+            smooth={true} 
+            duration={500} 
+            className='aboutMe' 
+            >
+
+            </AboutMeLink>
+
+            <SkillsLink>
+
+            </SkillsLink>
+            </nav>
+            
         </div>
     )
 }
