@@ -7,7 +7,6 @@ export default function Header() {
     return (
         <div>
             <NavBar/>
-            <h1>Hello, My name is Jelena Andjelkovic</h1>
         </div>
     )
 }
