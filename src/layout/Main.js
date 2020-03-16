@@ -6,12 +6,14 @@ import MyProjects from '../components/MyProjects'
 import Contact from '../components/Contact'
 
 export default function Main() {
+
+
     return (
         <div>
             <Switch>
                 <Route exact path='/' component={AboutMe} />
                 <Route path='/skills' component={Skillls} />
-                <Route path='/myprojects' component={MyProjects}/>
+                <Route path='/myprojects' component={MyProjects} />
                 <Route path='/contact' component={Contact} />
             </Switch>
             

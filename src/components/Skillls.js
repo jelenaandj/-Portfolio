@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function Skillls() {
+    const activePg=window.location.pathname
+
     return (
         <div>
             <div>

@@ -1,6 +1,12 @@
 import React from 'react'
 
-export default function Contact() {
+export default function Contact(props) {
+    const activePg=window.location.pathname
+    let history=props.history
+    const clickHandlerContact=(e)=>{
+        history.push('/myprojects')
+    }
+
     return (
         <div>
             <div>
@@ -10,7 +16,7 @@ export default function Contact() {
                 Email Address:jelena.andjelkovic453@gmail.com
                 </p>
             </div>
-            <button className='arrowBtn'>next</button>
+            <button className='arrowBtn' onClick={clickHandlerContact}>back</button>
 
         </div>
         
