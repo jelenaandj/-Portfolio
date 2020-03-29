@@ -1,7 +1,16 @@
 import React from 'react'
 
-export default function MyProjects() {
+export default function MyProjects(props) {
     console.log(window.location.pathname)
+    let history=props.history
+
+    const clickHandlerBack=(e)=>{
+        history.push('/skills')
+    }
+
+    const clickHandlerNext=(e)=>{
+        history.push('/contact')
+    }
     return (
         <div>
             <div>
@@ -10,8 +19,8 @@ export default function MyProjects() {
                 <p>p3</p>
             </div>
         
-            <button className='arrowBtn'>back</button>
-            <button className='arrowBtn'>next</button>
+            <button className='arrowBtn'onClick={clickHandlerBack}>back</button>
+            <button className='arrowBtn'onClick={clickHandlerNext}>next</button>
         </div>
        
     )
