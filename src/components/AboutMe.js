@@ -1,22 +1,40 @@
 import React from 'react'
 
 export default function AboutMe(props) {
-    const activePg=window.location.pathname
+    // const activePg=window.location.pathname
     let history=props.history
+    
+    // let handleButtonStyle=props.handleButtonStyle
+   
+    // const yellow={
+    //     color:'yellow'
+    // }
+
     const clickHandler=(e)=>{
         history.push('/skills')
-       console.log(history.location)
-
+        // setSkills('clicked')
+        // console.log(history.location)
+        // setSkills(true)
+      
     }
+
 
     return (
         <div>
-            <div>
-                <h1>Hello, My name is Jelena Andjelkovic</h1>
-                <p>For me, being a Web Developer is a perfect combination of creativity and problem solving.</p>
-                <p>It keeps me motivated and eager to improve.</p>  
+            <div className='aboutme'>
+                <h1>Hello everybody,</h1>
+                <h1>My name is Jelena Andjelkovic</h1>
+                <p>Here you can find out more about me. For starters I like JavaScript and React. </p>
+                <p>All the good stuff is in My Projects section</p>
+                <p>Hope you will like it, and if you don't you can always send a message in the Contact section.</p>  
             </div>
-            <button className='arrowBtn' onClick={clickHandler}>next</button>
+            <div className='arrowDiv'>
+            <div></div>
+            
+            <label>About Me</label>
+            <button className='arrowBtn' onClick={clickHandler} ><img src={'chevron-right.svg'} ></img></button>
+
+            </div>
         </div>
         
 

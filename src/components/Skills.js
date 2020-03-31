@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export default function Skillls(props) {
+export default function Skills(props) {
+   
     const activePg=window.location.pathname
     let history=props.history
 
@@ -14,13 +15,16 @@ export default function Skillls(props) {
 
     return (
         <div>
-            <div>
+            <div className='skills'>
                 <p>
                 MySQL beginner React beginnerJavaScript beginner HTML beginner CSS beginner MS Office intermediate
                 </p>
             </div>
-            <button className='arrowBtn' onClick={clickHandlerBack}>back</button>
-            <button className='arrowBtn' onClick={clickHandlerNext}>next</button>
+            <div className='arrowDiv'>
+            <button className='arrowBtn'onClick={clickHandlerBack}><img src={'chevron-left.svg'} ></img> </button>
+            <label>Skills</label>
+            <button className='arrowBtn'onClick={clickHandlerNext}><img src={'chevron-right.svg'} ></img></button>
+        </div>
         </div>
         
     )

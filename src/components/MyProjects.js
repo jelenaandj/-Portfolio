@@ -13,14 +13,17 @@ export default function MyProjects(props) {
     }
     return (
         <div>
-            <div>
+            <div className='myprojects'>
                 <p>p1</p>
                 <p>p2</p>
                 <p>p3</p>
             </div>
-        
-            <button className='arrowBtn'onClick={clickHandlerBack}>back</button>
-            <button className='arrowBtn'onClick={clickHandlerNext}>next</button>
+        <div className='arrowDiv'>
+            <button className='arrowBtn'  onClick={clickHandlerBack}> <img src={'chevron-left.svg'} ></img> </ button>
+            <label>My Projects</label>
+            <button className='arrowBtn'onClick={clickHandlerNext}><img src={'chevron-right.svg'} ></img></button>
+        </div>
+           
         </div>
        
     )

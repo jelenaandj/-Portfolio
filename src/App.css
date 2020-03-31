@@ -1,22 +1,77 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* 
+html,body{
+  /* height: 100%; */
 
 
+body{
+  font-family: 'Lato', sans-serif;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 90vh;
+  position: relative;
+  /* margin: 0; */
+  /* display: flex; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: black;
+  background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+
   color: white;
 }
-.notactivpgBtn{
-  background-color: rgb(104, 104, 223);
+
+.navbar{
+  display: flex;
+  position: sticky;
+  /* justify-content: unsafe; */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  align-content: center;
+  height: 50px;
+  padding-left: 2%;
+
 }
-.activpgBtn {
-  background-color: #cedd23;
+.btn,a{
+  width: 10%;
+  font-size: larger;
+  font-weight: 600;
+  text-decoration: none;
+  justify-content: center;
+  /* border: 1px solid white; */
+  
+}
+a:hover{
+  color: white;
+}
+
+.arrowDiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.arrowBtn{
+  height: 50px;
+  align-items: center;
+  justify-content: left;
+}
+
+.aboutme,.contact,.myprojects,.skills{
+  height: 300px;
+  padding: 5%;
+}
+.aboutme{
+  justify-content: left;
+}
+
+.main {
+  background: #948E99;  
+background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height:75vh;
+}
+.footer{
+  float: right;
+  padding-right: 5%;
 }
