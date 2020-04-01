@@ -16,13 +16,41 @@ export default function Skills(props) {
     return (
         <div>
             <div className='skills'>
-                <p>
-                MySQL beginner React beginnerJavaScript beginner HTML beginner CSS beginner MS Office intermediate
-                </p>
+                <div className='skills-container'>
+                    <div className='skills-icons'>
+                    <label>HTML</label>
+                    <img src={'html.svg'}></img>
+                    </div>
+                    <div className='skills-icons'>
+                    <label>CSS</label>
+                    <img src={'css.svg'}></img>
+                    </div>
+                    <div className='skills-icons'>
+                    <label>JavaScript</label>
+                    <img src={'javascript.png'}></img>
+                    </div>
+                    <div className='skills-icons'>
+                    <label>React</label>
+                    <img src={'react.png'}></img>
+                    <div className='skills-break'>
+                    </div>
+                    </div>
+                    <div className='skills-icons'>
+                    <label>GIT</label>
+                    <img src={'github.png'}></img>
+                    </div>
+                    <div className='skills-icons'>
+                    <label>Firebase</label>
+                    <img src={'firebase.png'}></img>
+                    </div> <div className='skills-icons'>
+                    <label>MySQL</label>
+                    <img src={'mysql.png'}></img>
+                    </div>
+                </div>
             </div>
             <div className='arrowDiv'>
             <button className='arrowBtn'onClick={clickHandlerBack}><img src={'chevron-left.svg'} ></img> </button>
-            <label>Skills</label>
+            <label className='arrow-title'>Skills</label>
             <button className='arrowBtn'onClick={clickHandlerNext}><img src={'chevron-right.svg'} ></img></button>
         </div>
         </div>

@@ -25,13 +25,13 @@ export default function AboutMe(props) {
                 <h1>Hello everybody,</h1>
                 <h1>My name is Jelena Andjelkovic</h1>
                 <p>Here you can find out more about me. For starters I like JavaScript and React. </p>
-                <p>All the good stuff is in My Projects section</p>
+                <p>All the good stuff is in My Projects section. Click on the image to go to the website or go to my GitHub account to check out the code.</p>
                 <p>Hope you will like it, and if you don't you can always send a message in the Contact section.</p>  
             </div>
             <div className='arrowDiv'>
             <div></div>
             
-            <label>About Me</label>
+            <label className='arrow-title'>About Me</label>
             <button className='arrowBtn' onClick={clickHandler} ><img src={'chevron-right.svg'} ></img></button>
 
             </div>

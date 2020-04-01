@@ -20,7 +20,7 @@ export default function Contact(props) {
             </div>
             <div className='arrowDiv'>
             <button className='arrowBtn' onClick={clickHandlerContact}><img src={'chevron-left.svg'}></img></button>
-            <label>Contact</label>
+            <label className='arrow-title'>Contact</label>
             <div></div>
             </div>
 

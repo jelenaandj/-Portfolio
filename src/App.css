@@ -49,12 +49,15 @@ a:hover{
 .arrowDiv{
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 }
 .arrowBtn{
-  height: 50px;
-  align-items: center;
-  justify-content: left;
+  /* height: 50px; */
+  /* margin-bottom: 20px; */
+  /* align-items: flex-start; */
+
+  /* display: none; */
+  background-color: transparent;
 }
 
 .aboutme,.contact,.myprojects,.skills{
@@ -64,14 +67,58 @@ a:hover{
 .aboutme{
   justify-content: left;
 }
+.skills-container{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+  flex-flow: wrap;
+  
+}
+/* .skills-break{
+  display: block;
+  height: 1px;
+  width: 100%;
+} */
+
+.arrow-title{
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.skills-icons,img{
+  height:80px;
+}
+.skills-icons,label{
+  justify-self: center;
+}
 
 .main {
   background: #948E99;  
 background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-height:75vh;
+height:81vh;
+}
+.myprojects{
+  display: flex;
+  justify-content: space-evenly;
+}
+.project-img{
+  height:150px;
+
 }
 .footer{
   float: right;
   padding-right: 5%;
+}
+.skills-break{
+  flex-flow: row wrap;
+   /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch */
+   align-content: flex-end;
 }
