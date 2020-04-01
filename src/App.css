@@ -114,11 +114,5 @@ height:81vh;
   padding-right: 5%;
 }
 .skills-break{
-  flex-flow: row wrap;
-   /* tweak where items line
-      up on the row
-      valid values are: flex-start,
-      flex-end, space-between,
-      space-around, stretch */
-   align-content: flex-end;
+
 }

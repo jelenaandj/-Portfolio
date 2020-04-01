@@ -32,8 +32,9 @@ export default function Skills(props) {
                     <div className='skills-icons'>
                     <label>React</label>
                     <img src={'react.png'}></img>
-                    <div className='skills-break'>
                     </div>
+                    <div className='skills-break'>
+
                     </div>
                     <div className='skills-icons'>
                     <label>GIT</label>
