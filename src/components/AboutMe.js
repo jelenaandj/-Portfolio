@@ -24,9 +24,9 @@ export default function AboutMe(props) {
             <div className='aboutme'>
                 <h1>Hello everybody,</h1>
                 <h1>My name is Jelena Andjelkovic</h1>
-                <p>Here you can find out more about me. For starters I like JavaScript and React. </p>
-                <p>All the good stuff is in My Projects section. Click on the image to go to the website or go to my GitHub account to check out the code.</p>
-                <p>Hope you will like it, and if you don't you can always send a message in the Contact section.</p>  
+                <p>Here you can find out more about me. For starters, I like JavaScript and React. </p>
+                <p>All the good stuff is in My Projects section. Click on the image to go directly to the website or go to my GitHub account and check out the code.</p>
+                <p>Hope you will like it, and if you don't, you can always send a message in the Contact section.</p>  
             </div>
             <div className='arrowDiv'>
             <div></div>

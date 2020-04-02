@@ -67,6 +67,9 @@ a:hover{
 .aboutme{
   justify-content: left;
 }
+h1{
+  padding-bottom: 20px;
+}
 .skills-container{
   display: flex;
   /* flex-direction: column; */
@@ -104,15 +107,42 @@ height:81vh;
 .myprojects{
   display: flex;
   justify-content: space-evenly;
+  flex-flow: wrap;
+
 }
 .project-img{
   height:150px;
 
 }
+.project1 div{
+  font-size: xx-small;
+}
+.project1 div:hover{
+  font-size: larger;
+}
+
+.project2 div{
+  font-size: xx-small;
+}
+.project2 div:hover{
+  font-size: larger;
+}
+.project3 div{
+  font-size: xx-small;
+}
+.project3 div:hover{
+  font-size: larger;
+}
+
+
 .footer{
   float: right;
   padding-right: 5%;
 }
-.skills-break{
 
+.contact-container{
+  display: flex;
 }
+/* .skills-break{
+
+} */
