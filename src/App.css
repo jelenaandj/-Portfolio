@@ -31,6 +31,8 @@ body{
   align-content: center;
   height: 50px;
   padding-left: 2%;
+  flex-flow: wrap;
+
 
 }
 .btn,a{
@@ -134,14 +136,36 @@ height:81vh;
   font-size: larger;
 }
 
-
+.linkedLink{
+  color: blue;
+}
 .footer{
   float: right;
   padding-right: 5%;
 }
 
-.contact-container{
+.contact{
   display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+
+
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+textarea{
+  resize: none;
+  padding: 0%;
+  height: 150px;
+
+
+}
+.form-button{
+  align-self: center;
+  flex-basis: 0;
 }
 /* .skills-break{
 

@@ -18,9 +18,9 @@ export default function MyProjects(props) {
                     <h3>Forum</h3>
                     <div>
                     <p>This is an application designed in a form of a forum.</p>
-                    <p> Users can read discussions and messages prior to logging in. </p>
+                    <p>Users can read discussions and messages prior to logging in. </p>
                     <p>After they have logged in, a number of possibilities are unlocked.</p>
-                    <p> They can start discussions, send messages and modify their profile.</p>
+                    <p>They can start discussions, send messages and modify their profile.</p>
                     </div>
                     
                     <img className='project-img' src={`https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80`}></img>
@@ -29,10 +29,10 @@ export default function MyProjects(props) {
                 <div className='project2'>
                     <h3>Budget App</h3>
                     <div>
-                    <p>This is an application designed in a form of a forum.</p>
-                    <p> Users can read discussions and messages prior to logging in. </p>
-                    <p>After they have logged in, a number of possibilities are unlocked.</p>
-                    <p> They can start discussions, send messages and modify their profile.</p>
+                    <p>In this application anyone can calculate their budget for the current month.</p>
+                    <p>Logged in users can however, choose months and save all the changes they want to. </p>
+                    <p>They can also transfer budget from previous months,</p>
+                    <p>and include it in the total amount for the current month.</p>
                     </div>
                     <img className='project-img'src={`https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80`}></img>
 
@@ -41,10 +41,10 @@ export default function MyProjects(props) {
                 <div className='project3'>
                 <h3>In progress</h3>
                     <div>
-                    <p>This is an application designed in a form of a forum.</p>
-                    <p> Users can read discussions and messages prior to logging in. </p>
-                    <p>After they have logged in, a number of possibilities are unlocked.</p>
-                    <p> They can start discussions, send messages and modify their profile.</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
+                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit" </p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit" </p>
                     </div>
                     <img className='project-img'src={`https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80`}></img>
 

@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 
+
+
+
 export default function Skills(props) {
+
    
     const activePg=window.location.pathname
     let history=props.history
@@ -12,7 +16,7 @@ export default function Skills(props) {
     const clickHandlerNext=(e)=>{
         history.push('/myprojects')
     }
-
+    
     return (
         <div>
             <div className='skills'>
