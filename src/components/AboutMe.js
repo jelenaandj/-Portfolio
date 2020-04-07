@@ -32,7 +32,7 @@ export default function AboutMe(props) {
             <div></div>
             
             <label className='arrow-title'>About Me</label>
-            <button className='arrowBtn' onClick={clickHandler} ><img src={'chevron-right.svg'} ></img></button>
+            <button className='arrowBtn' onClick={clickHandler} ><img  alt={'arr'} src={'chevron-right.svg'} ></img></button>
 
             </div>
         </div>

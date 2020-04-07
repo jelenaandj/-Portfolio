@@ -29,8 +29,8 @@ export default function Contact(props) {
 
     // const activePg=window.location.pathname
     let history=props.history
-    const[name,setName]=useState()
-    const[message,setMessage]=useState()
+    const[name,setName]=useState('')
+    const[message,setMessage]=useState('')
 
     
     const clickHandlerContact=(e)=>{
@@ -42,24 +42,37 @@ export default function Contact(props) {
     const nameHandler=(e)=>{
         if(e.target.value !== ''){
             setName(e.target.value)
-        }
+        }else{alert('Name field cannot be empty')}
     }
     const messageHandler=(e)=>{
         if(e.target.value !== ''){
             setMessage(e.target.value)
-        }
+        }else{alert('Message field cannot be empty')}
     }
+
+    const remover=(e)=>{
+        setName('')
+        setMessage('')
+    }
+
     const buttonHandler=(e)=>{
-        db.collection('messages').doc(name).set({
+        if(name!=='' && message !==''){
+        db.collection(name).add({
             name,
             message
         })
         .then(function() {
             console.log("Document written ");
+            
+        alert('Message sent')
+        remover()
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
-        });
+        });}else{
+            alert('Name and Message field cannot be empty')
+        }
+        
     }
 
     return (
@@ -67,16 +80,16 @@ export default function Contact(props) {
             <div className='contact'>
             <div>
             <div className='iconsContact'>
-                <img src={'phone.png'}></img><label>+381 64 5590571</label>
+                <img src={'phone.png'} alt={'phone'}></img><label>+381 64 5590571</label>
                 </div>
                 <div>
-                <img src={'email.png'}></img><label>jelena.andjelkovic453@gmail.com</label>
+                <img src={'email.png'}alt={'email'}></img><label>jelena.andjelkovic453@gmail.com</label>
                 </div>
                 <div>
-                <img src={'linkedin.png'}></img><a className='linkedLink' href='https://www.linkedin.com/in/jelena-andjelkovic-a76422199/'><label>www.linkedin.com/in/jelena-andjelkovic-a76422199/</label></a>
+                <img src={'linkedin.png'}alt={'linkedin'}></img><a className='linkedLink' href='https://www.linkedin.com/in/jelena-andjelkovic-a76422199/'><label>www.linkedin.com/in/jelena-andjelkovic-a76422199/</label></a>
                 </div>
                 <div>
-                <img src={'github.png'}></img><a className='linkedLink' href='https://github.com/jelenaandj'><label>https://github.com/jelenaandj</label></a>
+                <img src={'github.png'}alt={'github'}></img><a className='linkedLink' href='https://github.com/jelenaandj'><label>https://github.com/jelenaandj</label></a>
                 </div>
 
             </div>
@@ -90,7 +103,7 @@ export default function Contact(props) {
             </div>
 
             <div className='arrowDiv'>
-            <button className='arrowBtn' onClick={clickHandlerContact}><img src={'chevron-left.svg'}></img></button>
+            <button className='arrowBtn' onClick={clickHandlerContact}><img alt={'arr'} src={'chevron-left.svg'}></img></button>
             <label className='arrow-title'>Contact</label>
             <div></div>
             </div>

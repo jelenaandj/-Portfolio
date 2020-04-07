@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 
@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 export default function Skills(props) {
 
    
-    const activePg=window.location.pathname
+    // const activePg=window.location.pathname
     let history=props.history
 
     const clickHandlerBack=(e)=>{
@@ -23,40 +23,40 @@ export default function Skills(props) {
                 <div className='skills-container'>
                     <div className='skills-icons'>
                     <label>HTML</label>
-                    <img src={'html.svg'}></img>
+                    <img  alt={'arr'}src={'html.svg'}></img>
                     </div>
                     <div className='skills-icons'>
                     <label>CSS</label>
-                    <img src={'css.svg'}></img>
+                    <img  alt={'arr'}src={'css.svg'}></img>
                     </div>
                     <div className='skills-icons'>
                     <label>JavaScript</label>
-                    <img src={'javascript.png'}></img>
+                    <img  alt={'arr'}src={'javascript.png'}></img>
                     </div>
                     <div className='skills-icons'>
                     <label>React</label>
-                    <img src={'react.png'}></img>
+                    <img  alt={'arr'}src={'react.png'}></img>
                     </div>
                     <div className='skills-break'>
 
                     </div>
                     <div className='skills-icons'>
                     <label>GIT</label>
-                    <img src={'github.png'}></img>
+                    <img alt={'arr'} src={'github.png'}></img>
                     </div>
                     <div className='skills-icons'>
                     <label>Firebase</label>
-                    <img src={'firebase.png'}></img>
+                    <img  alt={'arr'}src={'firebase.png'}></img>
                     </div> <div className='skills-icons'>
                     <label>MySQL</label>
-                    <img src={'mysql.png'}></img>
+                    <img  alt={'arr'}src={'mysql.png'}></img>
                     </div>
                 </div>
             </div>
             <div className='arrowDiv'>
-            <button className='arrowBtn'onClick={clickHandlerBack}><img src={'chevron-left.svg'} ></img> </button>
+            <button className='arrowBtn'onClick={clickHandlerBack}><img  alt={'arr'}src={'chevron-left.svg'} ></img> </button>
             <label className='arrow-title'>Skills</label>
-            <button className='arrowBtn'onClick={clickHandlerNext}><img src={'chevron-right.svg'} ></img></button>
+            <button className='arrowBtn'onClick={clickHandlerNext}><img alt={'arr'} src={'chevron-right.svg'} ></img></button>
         </div>
         </div>
         

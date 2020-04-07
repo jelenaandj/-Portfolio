@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 
 
 
-export default function NavBar(props) {
+export default function NavBar() {
 
    
-    let page=window.location.pathname
-console.log(page)
+    // let page=window.location.pathname
+// console.log(page)
 
     
 return (
