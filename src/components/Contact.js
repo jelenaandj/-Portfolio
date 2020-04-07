@@ -1,12 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "firebase/firestore";
+
+// require("firebase/firestore");
+const firebase = require("firebase");
+// // Required for side-effects
+
+
 
 export default function Contact(props) {
-    const activePg=window.location.pathname
+// let db=props.db
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyBDhiEDGb8ZEYb619j1oxdU0DKXQbR73z0",
+        authDomain: "portfolio-3d226.firebaseapp.com",
+        databaseURL: "https://portfolio-3d226.firebaseio.com",
+        projectId: "portfolio-3d226",
+        storageBucket: "portfolio-3d226.appspot.com",
+        messagingSenderId: "568564967690",
+        appId: "1:568564967690:web:5913b5abfbc3f07f4d72f3",
+        measurementId: "G-XCL8EQJNXF"
+      };
+
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      }
+    var db = firebase.firestore();
+      ////////
+
+    // const activePg=window.location.pathname
     let history=props.history
+    const[name,setName]=useState()
+    const[message,setMessage]=useState()
+
     
     const clickHandlerContact=(e)=>{
         history.push('/myprojects')
        
+    }
+    /////////////////
+
+    const nameHandler=(e)=>{
+        if(e.target.value !== ''){
+            setName(e.target.value)
+        }
+    }
+    const messageHandler=(e)=>{
+        if(e.target.value !== ''){
+            setMessage(e.target.value)
+        }
+    }
+    const buttonHandler=(e)=>{
+        db.collection('messages').doc(name).set({
+            name,
+            message
+        })
+        .then(function() {
+            console.log("Document written ");
+        })
+        .catch(function(error) {
+            console.error("Error adding document: ", error);
+        });
     }
 
     return (
@@ -30,8 +83,9 @@ export default function Contact(props) {
                 
             <div className='form'>
                 <h3>Send a Message</h3>
-                <textarea type='text'></textarea>
-                <input type='submit'className='form-button' value='Send'></input>
+                <input type='text' placeholder='Your name or e-mail address' onChange={nameHandler}></input>
+                <textarea type='text' placeholder='Message here' onChange={messageHandler}></textarea>
+                <input type='submit'className='form-button' value='Send' onClick={buttonHandler}></input>
             </div>
             </div>
 

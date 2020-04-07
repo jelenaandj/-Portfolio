@@ -6,7 +6,7 @@ import MyProjects from '../components/MyProjects'
 import Contact from '../components/Contact'
 
 export default function Main(props) {
-
+// let db=props.db
    
 
     return (
