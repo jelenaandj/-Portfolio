@@ -50,7 +50,7 @@ export default function Contact(props) {
         }else{alert('Message field cannot be empty')}
     }
 
-    const remover=(e)=>{
+    const remover=()=>{
         setName('')
         setMessage('')
     }
@@ -62,17 +62,21 @@ export default function Contact(props) {
             message
         })
         .then(function() {
+            
             console.log("Document written ");
             
         alert('Message sent')
-        remover()
+        
+        
+
         })
         .catch(function(error) {
             console.error("Error adding document: ", error);
         });}else{
             alert('Name and Message field cannot be empty')
         }
-        
+        remover()
+       
     }
 
     return (
@@ -96,7 +100,7 @@ export default function Contact(props) {
                 
             <div className='form'>
                 <h3>Send a Message</h3>
-                <input type='text' placeholder='Your name or e-mail address' onChange={nameHandler}></input>
+                <input type='text' placeholder='Your name or e-mail' onChange={nameHandler}></input>
                 <textarea type='text' placeholder='Message here' onChange={messageHandler}></textarea>
                 <input type='submit'className='form-button' value='Send' onClick={buttonHandler}></input>
             </div>
