@@ -22,7 +22,7 @@ export default function AboutMe(props) {
     return (
         <div>
             <div className='aboutme'>
-                <h1>Hello everybody,</h1>
+                <h1>Hello,</h1>
                 <h1>My name is Jelena Andjelkovic</h1>
                 <p>Here you can find out more about me. For starters, I like JavaScript and React. </p>
                 <p>All the good stuff is in My Projects section. Click on the image to go directly to the website or go to my GitHub account and check out the code.</p>

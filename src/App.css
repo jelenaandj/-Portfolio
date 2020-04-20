@@ -82,6 +82,7 @@ h1{
   align-items: center;
   height: fit-content;
   flex-flow: wrap;
+  transition-delay: 20s; 
   
 }
 /* .skills-break{
@@ -117,7 +118,8 @@ height:81vh;
 }
 .project-img{
   height:150px;
-
+  width: 200px;
+  transition: 5s linear;
 }
 .project1 div{
   font-size: xx-small;
@@ -183,8 +185,10 @@ textarea{
     height: 100vh;
   }
   .navbar{   
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: small;
+    margin: 5%;
     
   }
   .arrowDiv{
@@ -202,5 +206,70 @@ textarea{
   .contact-container{
     display: flex;
     flex-direction: column;
+    font-size: small;
+  }
+  .contact-container img{
+    width: 40px;
+    height: 40px;
+  }
+  .project-img{
+    width: 100px;
+    height: 100px;
+  }
+  .skills-container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    font-size: x-small;
+  }
+}
+/* ///animation */
+h1,p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.skills-container {
+  animation-duration: 3s;
+  /* flex-direction: row; */
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width:100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* ///// */
+h3 {
+  animation-duration: 3s;
+  animation-name: slidedown;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes slidedown {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
   }
 }

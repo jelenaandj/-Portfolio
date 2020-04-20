@@ -23,7 +23,7 @@ export default function MyProjects(props) {
                     <p>They can start discussions, send messages and modify their profile.</p>
                     </div>
                     
-                    <img className='project-img' alt={'arr'} src={`https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80`}></img>
+                    <img className='project-img' alt={'arr'} src={`forum.png`}></img>
 
                 </div>
                 <div className='project2'>
@@ -34,14 +34,14 @@ export default function MyProjects(props) {
                     <p>They can also transfer budget from previous months,</p>
                     <p>and include it in the total amount for the current month.</p>
                     </div>
-                    <img className='project-img' alt={'arr'}src={`https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80`}></img>
+                    <img className='project-img' alt={'arr'}src={`budget.png`}></img>
 
                 </div>
                 
                 <div className='project3'>
-                <h3>Shopper</h3>
+                <h3>Online shoping app</h3>
                     <div>
-                    <p>Online shoping app </p>
+                    <p>In progress In progress In progress</p>
                     <p>In progress In progress In progress</p>
                     <p>In progress In progress In progress</p>
                     <p>In progress In progress In progress </p>

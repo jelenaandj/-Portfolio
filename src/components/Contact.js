@@ -65,7 +65,7 @@ export default function Contact(props) {
             
             console.log("Document written ");
             
-        alert('Message sent')
+        alert('Thank you for your comment')
         
         
 
